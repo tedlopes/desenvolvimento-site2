@@ -1,0 +1,20 @@
+{
+  "name": "site2",
+  "homepage": "https://github.com/tedlopes/desenvolvimento-site2",
+  "authors": [
+    "Ted <theddy_lopes@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
