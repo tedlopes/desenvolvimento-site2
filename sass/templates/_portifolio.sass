@@ -1,0 +1,61 @@
+header
+	margin: 0 0 25px
+
+	background:
+		image: url('../imagens/foto-slide-pagina-portifolio.jpg')
+		size: cover
+		position: top center
+		repeat: no-repeat
+		color: $preto
+
+.portifolio
+	ul
+		+clearfix
+		+make-row
+
+		li
+			+make-sm-column(3)
+			+make-xs-column(6)
+			overflow: hidden
+			margin-bottom: 30px
+			
+			figure
+				position: relative
+				background: $branco
+
+				&:hover
+					a
+						+opacity(1)
+					.overlay
+						top: 0
+						+transition(.3s)
+
+				img
+					+img-responsive
+
+				figcaption
+					a
+						text-align: center
+						text-transform: uppercase
+						position: absolute
+						z-index: 2
+						color: $branco
+						width: 100%
+						top: 40%
+						+opacity(0)	
+
+						h3
+							+font-size(22px)		
+							margin: 0
+						p
+							+font-size(18px)								
+					.overlay
+						+gradient(60deg, $azul, $verde)
+						position: absolute
+						+opacity(.7)
+						left: 0
+						top: 100%
+						z-index: 1
+						display: block
+						width: 100%
+						height: 100%
