@@ -1,1 +1,49 @@
-section.contato
+header
+	margin: 0 0 25px
+
+	background:
+		image: url('../imagens/foto-slide-pagina-contato.jpg')
+		size: cover
+		position: top center
+		repeat: no-repeat
+		color: $preto
+
+.botao
+	display: table
+	margin: 30px auto
+	clear: both
+
+	
+
+
+.contato
+	form
+		+clearfix		
+		+make-sm-column(8)
+		+make-sm-column-offset(2)
+
+		.cols
+			+make-row
+			.col 
+				+make-sm-column(6)	
+
+	input,
+	select,
+	textarea
+		width: 100%
+		border: 3px solid $cinza-claro
+		&:hover
+			border-color: $azul
+		&:focus
+			border-color: $verde				
+		padding: 7px		
+		text-transform: uppercase	
+		+transition(.5s)
+
+	button
+		+transition(.5s)	
+
+	.bg-success,
+	.bg-danger
+		padding: 7px
+			
