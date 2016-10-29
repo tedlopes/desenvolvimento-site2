@@ -1,0 +1,88 @@
+.menu-responsivo
+	position: fixed
+	width: 150px
+	height: 100%
+	left: -150px
+	top: 0
+	+transition(.3s)
+	&.ativo
+		+transition(.3s)
+		left: 0
+
+	+gradient(0deg, $verde, $azul)
+	ul 
+		li
+			background-color: rgba($branco, .2)
+			border-bottom: 3px solid $preto	
+
+			a
+				color: $preto
+				padding: 7px
+				display: block
+				text-transform: uppercase
+				text-align: center
+
+				&:hover,
+				&:focus
+					background-color: rgba($preto, .5)
+					color: $branco
+
+
+.layout
+	+transition(.3s)
+	&.ativo
+		+transition(.3s)
+		padding-left: 150px
+
+.toggle
+	width: 35px
+	height: 35px
+	float: left
+	position: relative
+	overflow: hidden
+	margin: 0 15px
+	display: none
+
+	+breakpoint($tablet)
+		display: block
+
+	+breakpoint($celular)
+		display: block	
+
+
+	&:hover
+		span
+			&:nth-child(1)
+				top: 10px
+			&:nth-child(3)
+				top: 22px
+			+transition(.3s)	
+
+	&.ativo
+		span
+			&:nth-child(1)
+				top: 18px
+				+rotate(48deg)
+			&:nth-child(2)
+				display: none	
+			&:nth-child(3)
+				top: 18px
+				+rotate(132deg)				
+
+
+	span
+		width: 100%
+		height: 4px
+		background-color: $branco
+		display: block
+		content: " "
+		position: absolute
+		left: 0
+		+transition(.3s)
+
+		&:nth-child(1)
+			top: 7px
+		&:nth-child(2)
+			top: 16px
+		&:nth-child(3)
+			top: 25px

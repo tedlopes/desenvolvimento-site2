@@ -19,9 +19,10 @@ header
 		img
 			width: 140px
 			height: 62px
+
 	.links
 		float: right
-		margin: 35px 0 0
+		margin: 35px 0 0	
 		
 		nav,
 		.social
@@ -37,10 +38,30 @@ header
 			ul
 				li
 					display: inline-block
-					margin: 0 20px 0 0					
+					margin: 0 20px 0 0		
+
 					a
 						color: $branco
 						text-transform: uppercase
+
+						&:after
+							content: ""
+							display: block
+							width: 0
+							margin: 0 auto 
+							height: 4px
+							background-color: $branco
+						
+						&:hover
+
+							&:after
+								width: 100%
+								+transition(0.3s)
+								+gradient(80deg, $verde, $azul)
+								+border-radius(8px)
+
+						
+					
 
 		.social
 			li

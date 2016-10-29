@@ -5,6 +5,7 @@
 	<title>Criando um site responsivo do começo ao fim</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/geral.css">
+	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
 	<link rel="stylesheet" href="css/plugins.css">
 	<link rel="stylesheet" href="css/portifolio.css">
 	
@@ -13,183 +14,213 @@
 
 	<header>
 
-		<div class="container">
-			<div class="logo">
-			    <a href="index.html">
-					<img src="imagens/logo-slide.png" alt="Logo do Topo">
-				</a>
-			</div>
-			
-			<div class="links">
-				<nav>
-					
-					<ul>
-						<li><a href="index.html">Início</a></li>
-						<li><a href="sobre.html">Sobre</a></li>
-						<li><a href="portifolio.html">Portifólio</a></li>
-						<li><a href="contato.html">Contato</a></li>
-					</ul>
-				
-				</nav>	
-
-		        <ul class="social">
-		            
-		            <li>
-		            	<a href="https://www.facebook.com/">
-		            		<img src="imagens/icone-facebook.png" alt="Link para o Facebook">
-		            	</a>
-		            </li>
-		            	
-		            <li>
-		            	<a href="https://www.youtube.com/">
-		            		<img src="imagens/icone-youtube.png" alt="Link para o Youtube">
-		            	</a>
-		            </li>
-		            
-		        </ul>
-
-	        </div>
-
-	            <h1>Meus<strong> Trabalhos</strong></h1>
-
-	            <p>Lorem ipsum dolor sit amet.</p>
-
+		<div class="menu-responsivo">
+			<ul>
+				<li><a href="index.html">Início</a></li>
+				<li><a href="sobre.html">Sobre</a></li>
+				<li><a href="portifolio.html">Portifólio</a></li>
+				<li><a href="contato.html">Contato</a></li>
+			</ul>
 		</div>
-
-	</header>
-
-	<main>	
-		<section class="portifolio">
+			
+		<div class="layout">	
 			<div class="container">
-				<ul>
-					<li>
-						<figure>
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-blur">
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-blur">
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-blur">
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure class="imghvr-blur">
-							<img src="http://placekitten.com/g/368/150" alt="Thumb">
-							<figcaption>
-								<a href="">
-									<h3>Nome da Imagem</h3>
-									<p>Efeito Hover</p>
-								</a>
-								<div class="overlay">
-									
-								</div>
-							</figcaption>
-						</figure>
-					</li>
+				<div class="logo wow bounceInLeft" data-wow-duration="0.5s" data-wow-delay="0.1s">
+				    <a href="index.html">
+						<img src="imagens/logo-slide.png" alt="Logo do Topo">
+					</a>
+				</div>
+				
+				<div class="links wow bounceInDown" data-wow-duration="0.5s" data-wow-delay="0.1s">
+					<nav>
+						
+						<ul>
+							<li><a href="index.html">Início</a></li>
+							<li><a href="sobre.html">Sobre</a></li>
+							<li><a href="portifolio.html">Portifólio</a></li>
+							<li><a href="contato.html">Contato</a></li>
+						</ul>
+					
+					</nav>	
 
-				</ul>		
+					<div class="toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+
+			        <ul class="social">
+			            
+			            <li>
+			            	<a href="https://www.facebook.com/">
+			            		<img src="imagens/icone-facebook.png" alt="Link para o Facebook">
+			            	</a>
+			            </li>
+			            	
+			            <li>
+			            	<a href="https://www.youtube.com/">
+			            		<img src="imagens/icone-youtube.png" alt="Link para o Youtube">
+			            	</a>
+			            </li>
+			            
+			        </ul>
+
+		        </div>
+
+		            <h1>Meus<strong> Trabalhos</strong></h1>
+
+		            <p>Lorem ipsum dolor sit amet.</p>
 
 			</div>
-		</section>
-	</main>
 
-	<footer>
-		<div class="logo-rodape">
-			<a href="index.html">
-				<img src="imagens/logo-rodape.png" alt="Logo do Rodapé">
-			</a>
+		</header>
 
-			<p>2016 Todos os Direitos Reservados</p>
-		</div>			
-	</footer>
+		<main>	
+			<section class="portifolio">
+				<div class="container">
+					<ul>
+						<li>
+							<figure>
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure class="imghvr-blur">
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure class="imghvr-blur">
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure class="imghvr-blur">
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure class="imghvr-blur">
+								<img src="http://placekitten.com/g/368/150" alt="Thumb">
+								<figcaption>
+									<a href="">
+										<h3>Nome da Imagem</h3>
+										<p>Efeito Hover</p>
+									</a>
+									<div class="overlay">
+										
+									</div>
+								</figcaption>
+							</figure>
+						</li>
 
+					</ul>		
+
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<div class="logo-rodape">
+				<a href="index.html">
+					<img src="imagens/logo-rodape.png" alt="Logo do Rodapé">
+				</a>
+
+				<p>2016 Todos os Direitos Reservados</p>
+			</div>			
+		</footer>
+	</div>
+
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script>
+		$(function(){
+			$('.toggle').click(function(){
+				$('.layout').toggleClass('ativo');
+				$('.menu-responsivo').toggleClass('ativo');
+				$(this).toggleClass('ativo');
+			});
+			new WOW().init();
+		});
+	</script>
+	
 </body>
 </html>
