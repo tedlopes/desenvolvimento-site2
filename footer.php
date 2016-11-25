@@ -1,9 +1,9 @@
 		</main>
 
 		<footer>
-			<div class="logo-rodape wow bounceInUp" data-wow-duration="0.8s" data-wow-delay="0.2s">
+			<div class="logo-rodape">
 				<a href="index.html">
-					<img src="imagens/logo-rodape.png" alt="Logo do Rodapé">
+					<img src="<?php bloginfo("template_url"); ?>/imagens/logo-rodape.png" alt="Logo do Rodapé">
 				</a>
 
 				<p>2016 Todos os Direitos Reservados</p>
@@ -11,8 +11,8 @@
 		</footer>
 	</div>
 
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/wow/dist/wow.min.js"></script>
+	<script src="<?php bloginfo("template_url"); ?>/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="<?php bloginfo("template_url"); ?>/bower_components/wow/dist/wow.min.js"></script>
 	<script>
 		$(function(){
 			$('.toggle').click(function(){

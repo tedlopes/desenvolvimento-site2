@@ -4,7 +4,7 @@
 		
 		<div class="itens">
 			<div class="imagem wow shake" data-wow-duration="0.8s" data-wow-delay="2.5s">
-				<img src="imagens/foto-miolo.png" alt="Foto do Miolo">
+				<img src="<?php bloginfo("template_url"); ?>/imagens/foto-miolo.png" alt="Foto do Miolo">
 			</div>
 
 			<div class="icone-lapis wow swing" data-wow-duration="1s" data-wow-delay="0.5s">

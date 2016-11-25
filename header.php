@@ -2,12 +2,12 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Criando um site responsivo do começo ao fim</title>
+	<title><?php bloginfo("name"); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/geral.css">
-	<link rel="stylesheet" href="bower_components/wow/css/libs/animate.css">
-	<link rel="stylesheet" href="css/plugins.css">
-	<link rel="stylesheet" href="css/<?php echo $style; ?>.css">
+	<link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/css/geral.css">
+	<link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/bower_components/wow/css/libs/animate.css">
+	<link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/css/plugins.css">
+	<link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/css/<?php echo $style; ?>.css">
 	
 </head>
 <body>
@@ -20,8 +20,8 @@
 
 			<div class="container">
 				<div class="logo wow bounceInLeft" data-wow-duration="0.5s" data-wow-delay="0.1s">
-				    <a href="index.php">
-						<img src="imagens/logo-slide.png" alt="Logo do Topo">
+				    <a href="<?php bloginfo("url") ?>">
+						<img src="<?php bloginfo("template_url"); ?>/imagens/logo-slide.png" alt="Logo do Topo">
 					</a>
 				</div>
 				
@@ -40,13 +40,13 @@
 			            
 			            <li>
 			            	<a href="https://www.facebook.com/">
-			            		<img src="imagens/icone-facebook.png" alt="Link para o Facebook">
+			            		<img src="<?php bloginfo("template_url"); ?>/imagens/icone-facebook.png" alt="Link para o Facebook">
 			            	</a>
 			            </li>
 			            	
 			            <li>
 			            	<a href="https://www.youtube.com/">
-			            		<img src="imagens/icone-youtube.png" alt="Link para o Youtube">
+			            		<img src="<?php bloginfo("template_url"); ?>/imagens/icone-youtube.png" alt="Link para o Youtube">
 			            	</a>
 			            </li>
 			            
