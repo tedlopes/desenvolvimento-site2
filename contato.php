@@ -1,4 +1,5 @@
 <?php
+
 	$style = 'contato';
 	$chamada = '<strong>Fale</strong> Comigo';
 	include('header.php');

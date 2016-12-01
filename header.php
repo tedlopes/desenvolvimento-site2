@@ -10,12 +10,24 @@
 	<link rel="stylesheet" href="<?php bloginfo("template_url"); ?>/css/<?php echo $style; ?>.css">
 	
 </head>
-<body>
+<body <?php body_class(); ?>>
 	
 	<?php include('includes/organisms/menu-responsivo.php'); ?>
 	
 
 	<div class="layout">
+		<style>
+			<?php if(get_the_post_thumbnail()) : ?>
+				header {
+					background-image: url('<?php the_post_thumbnail_url(); ?>');
+				}
+			<?php else : ?>
+				header {
+					background-image: url('<?php bloginfo('template_url'); ?>/imagens/foto-slide-pagina-inicial.jpg');
+				}
+			<?php endif; ?>
+		</style>		
+
 		<header>
 
 			<div class="container">
